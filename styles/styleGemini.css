@@ -1,0 +1,92 @@
+body {
+    background-color: #333; /* Cor de fundo escura */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha os elementos ao topo */
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px; /* Margem superior para centralizar verticalmente */
+}
+
+.logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+input:focus + label,
+input:valid + label {
+    top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.create-account {
+    color: green;
+    text-decoration: none;
+}
+
+.login-button {
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
